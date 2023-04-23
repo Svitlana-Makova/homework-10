@@ -19,44 +19,48 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header-inner">
           <a href="" class="logo-img">
             <img src="images/logo.png" alt="logo" />
           </a>
-          <ul class="links">
-            <li class="link"><a href="#" class="nav-link">home</a></li>
-            <li class="link"><a href="#" class="nav-link">about us</a></li>
-            <li class="link choice">
-              <a href="" class="nav-link arrow">services</a>
-              <ul class="links-dropdown">
+          <ul class="header-links">
+            <li class="link"><a href="#" class="navigation-link">home</a></li>
+            <li class="link">
+              <a href="#" class="navigation-link">about us</a>
+            </li>
+            <li class="link dropdown">
+              <a href="" class="navigation-link arrow">services</a>
+              <ul class="links__dropbox">
                 <li class="link-dropdown">
-                  <a href="#" class="nav-link drop">web design</a>
+                  <a href="#" class="nav-link">web design</a>
                 </li>
                 <li class="link-dropdown">
-                  <a href="#" class="nav-link drop">wordpress design</a>
+                  <a href="#" class="nav-link">wordpress design</a>
                 </li>
                 <li class="link-dropdown">
-                  <a href="#" class="nav-link drop">mobile app devplopment</a>
+                  <a href="#" class="nav-link">mobile app devplopment</a>
                 </li>
                 <li class="link-dropdown">
-                  <a href="#" class="nav-link drop">internet marketing</a>
+                  <a href="#" class="nav-link">internet marketing</a>
                 </li>
                 <li class="link-dropdown">
-                  <a href="#" class="nav-link drop">social media management</a>
+                  <a href="#" class="nav-link">social media management</a>
                 </li>
               </ul>
             </li>
-            <li class="link choice">
-              <a href="#" class="nav-link arrow">portfolio</a>
+            <li class="link dropdown">
+              <a href="#" class="navigation-link arrow">portfolio</a>
             </li>
-            <li class="link"><a href="#" class="nav-link">blog</a></li>
-            <li class="link"><a href="#" class="nav-link">contact us</a></li>
+            <li class="link"><a href="#" class="navigation-link">blog</a></li>
+            <li class="link">
+              <a href="#" class="navigation-link">contact us</a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <div class="box">
+      <div class="hero-image">
         <div class="container">
           <div class="carousel">
             <div class="slider-1">
@@ -74,14 +78,14 @@
           </div>
         </div>
       </div>
-      <div class="wrap-box-processes">
+      <div class="processes">
         <div class="container">
-          <div class="wrap">
+          <div class="servises-item">
             <div class="wrap-container">
-              <div class="process-wrapper">
-                <a href="" class="icon-clean-theme icon-border-box"></a>
+              <h2 class="process-wrapper">
+                <span class="icon-clean-theme icon-border-box"></span>
                 <div class="name-process">clean theme</div>
-              </div>
+              </h2>
               <div class="about-process">
                 <p>
                   Ut nec lorem id orci convallis porta. Donec pharetra neque eu
@@ -89,18 +93,18 @@
                   Quisque at nulla leo, non aliquet mi.
                 </p>
               </div>
-              <div class="read-wrap">
+              <div class="read-more">
                 <a href="" class="read arrow-right">read more</a>
               </div>
             </div>
+
             <div class="wrap-container">
-              <div class="process-wrapper">
-                <a
-                  href=""
+              <h2 class="process-wrapper">
+                <span
                   class="icon-responsive-design icon-hover icon-border-box"
-                ></a>
+                ></span>
                 <div class="name-process">responsive design</div>
-              </div>
+              </h2>
               <div class="about-process">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -108,15 +112,13 @@
                   auctor. Phasellus at ultricies nisl. Integer at leo eros.
                 </p>
               </div>
-              <div class="read-wrap">
-                <a href="#" class="read arrow-right">read more</a>
-              </div>
+              <a href="#" class="read arrow-right">read more</a>
             </div>
             <div class="wrap-container">
-              <div class="process-wrapper">
-                <a href="" class="icon-fully-layerd-psd icon-border-box"></a>
+              <h2 class="process-wrapper">
+                <span class="icon-fully-layerd-psd icon-border-box"></span>
                 <div class="name-process">fully layerd psd</div>
-              </div>
+              </h2>
               <div class="about-process">
                 <p>
                   Phasellus lobortis metus non augue sodales volutpat.
@@ -124,15 +126,13 @@
                   vitae nulla nec purus cursus pretium sed id magna.
                 </p>
               </div>
-              <div class="read-wrap">
-                <a href="" class="read arrow-right">read more</a>
-              </div>
+              <a href="" class="read arrow-right">read more</a>
             </div>
             <div class="wrap-container">
-              <div class="process-wrapper">
-                <a href="" class="icon-ready-for-coding icon-border-box"></a>
+              <h2 class="process-wrapper">
+                <span class="icon-ready-for-coding icon-border-box"></span>
                 <div class="name-process">ready for coding</div>
-              </div>
+              </h2>
               <div class="about-process">
                 <p>
                   Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam
@@ -140,36 +140,33 @@
                   neque porta ante. Fusce quis odio urna.
                 </p>
               </div>
-              <div class="read-wrap">
-                <a href="#" class="read arrow-right"> read more</a>
-              </div>
+              <a href="#" class="read arrow-right"> read more</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="downloads-box-wrap">
-          <div class="about-downloads-wrap">
-            <p class="about-downloads">
-              This is a clean and modern, four column website PSD template. You
-              can code it into a Wordpress website, HTML5 responsive website for
-              your personal or client works. So ahead and download this
-              wonderful PSD template!
-            </p>
-            <a href="./download/Hillel-IT-School.pdf" class="button-download">
-              <button class="button" type="button">
-                <span class="icon-download-psd"></span>
-                <span class="button-text">download psd </span>
-              </button>
-            </a>
-          </div>
+      <div class="container wrap-downloads">
+        <div class="about-downloads-wrap">
+          <p class="about-downloads">
+            This is a clean and modern, four column website PSD template. You
+            can code it into a Wordpress website, HTML5 responsive website for
+            your personal or client works. So ahead and download this wonderful
+            PSD template!
+          </p>
+
+          <a
+            href="./download/Hillel-IT-School.pdf"
+            class="button button-download"
+          >
+            <span class="icon-download-psd">download psd</span>
+          </a>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="protection-box-wraper">
-          <p class="protection-wraper">
+        <div class="footer-iner">
+          <p class="footer-copyrights">
             © Copyright 2012 - BisLite Inc. All rights reserved. Some free icons
             used here are created by Brankic1979.com. Client Logos are copyright
             and trademark of the respective owners / companies.
