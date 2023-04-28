@@ -6,8 +6,14 @@
 body {
     margin: 0 auto;
     font-size: 13px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*header*/
 .header {
     height: 120px;
     filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.07));
@@ -15,10 +21,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 1;
-}
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -36,14 +38,14 @@ ul {
 .logo-img :hover {
     opacity: 0.7;
 }
-.header-links {
+.nav {
     display: flex;
 }
-.link {
+.nav-item {
     display: flex;
     align-items: center;
 }
-.link:not(:last-child) {
+.nav-item:not(:last-child) {
     margin-right: 24px;
 }
 .navigation-link {
@@ -52,8 +54,7 @@ ul {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    height: 36px;
-    padding: 0 13px;
+    padding: 13px;
     background-color: inherit;
 }
 .dropdown .navigation-link {
@@ -75,12 +76,12 @@ ul {
     color: #000;
     transform: rotate(270deg);
 }
-.links__dropbox {
+.dropdowns {
     display: none;
     position: absolute;
     background-color: #fff;
-    padding: 0 6px 8px 6px;
-    top: 36px;
+    padding: 0 6px 8px;
+    top: 42px;
     left: 0;
     box-shadow: 0 5px #2aacc8;
 }
@@ -88,26 +89,23 @@ ul {
     width: 200px;
     display: flex;
     align-items: center;
-    padding: 0 13px;
+    padding: 0 6px;
     color: #000;
     font-size: 13px;
     line-height: 2.8;
     text-transform: capitalize;
     font-family: "Roboto";
 }
-.dropdown {
-    position: relative;
-
-}
-
 .link-dropdown:not(:last-child) {
     border-bottom: 1px solid #e7e7e7;
-
+}
+.dropdown {
+    position: relative;
 }
 .nav-link:hover {
     color: #2aacc8;
 }
-.dropdown:hover .links__dropbox {
+.dropdown:hover .dropdowns {
     display: block;
     top: 36px;
     position: absolute;
@@ -118,13 +116,12 @@ ul {
     box-shadow: 0 -5px #2aacc8;
 }
 
-
+/*main*/
 
 .hero-image {
     height: 500px;
     background-color: #81e4ed;
     padding-top: 30px;
-    margin-bottom: 4px;
 }
 .slider-1 {
     height: 440px;
@@ -153,7 +150,6 @@ ul {
     font-size: 50px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto";
     margin-left: 60px;
     padding-top: 105px;
 }
@@ -165,15 +161,15 @@ ul {
     display: flex;
     align-items: center;
 }
-.servises-item {
+.serviсes {
     display: flex;
     flex-wrap: wrap;
 }
-.wrap-container {
+.serviсes-item {
     display: block;
     margin-right: 38px;
 }
-.wrap-container:last-of-type {
+.serviсes-item:last-of-type {
     margin-right: 0;
 }
 .name-process {
@@ -182,40 +178,36 @@ ul {
     text-transform: uppercase;
     color: #000;
     font-weight: bold;
-    font-family: "Roboto";
     margin-left: 60px;
 }
-.process-wrapper {
+.serviсes-title {
     display: flex; 
     align-items: center;
     margin-bottom: 20px;
 }
-.about-process {
+.serviсes-text {
     font-size: 13px;
     line-height: 1.538;
     color: #363636;
-    font-family: "Roboto";
     width: 220px;      
 }
-.read {
-    text-decoration: none;
-    color: #2aacc8;
-    font-family: "Roboto";
-    font-size: 13px;
-    line-height: 1.538; 
-    text-transform: capitalize;
+.read-more-wrap {
+    display: flex;
+    align-items: center;
     margin-top: 30px; 
 }
-.read:hover{
+.read-more {
+    color: #2aacc8;
+    line-height: 1.538; 
+    text-transform: capitalize;
+    
+}
+.read-more:hover{
     text-decoration: underline;
 }
 .arrow-right::before {
     content:"\003E";
-    position: absolute;
-    width: 5px;
-    height: 7px;
     border-radius: 2px;
-    background-color: none;
     color: #000;
     position: relative;
     padding-right: 10px;
@@ -264,16 +256,17 @@ ul {
     background-color: #2aacc8;
 }
 .wrap-downloads {
-    margin-top: 44px;
-    margin-bottom: 42px;
-    min-height: 140px;
-    background-color: #e8fcfe;
-    border: 1px solid #81e4ed;
-    display: flex;  
+    min-height: 226px;
+    display: flex;
+    align-items: center; 
 }
 .about-downloads-wrap {
     display: flex;
     align-items: center;
+    min-height: 140px;
+    width: 100%;
+    background-color: #e8fcfe;
+    border: 1px solid #81e4ed;
 }
 .about-downloads {
     width: 613px;
@@ -293,18 +286,15 @@ ul {
     background-image: linear-gradient(0deg, #29abc7 0%, #29abc7 0%, #5fcddd 15%, #71d9e5 50%, #81e3ed 100%);
     border: 1px solid #2aacc8;    
     cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 .button:hover {
     background-image: linear-gradient(0deg, #29abc7 15%, #29abc7 100%, #5fcddd 50%, #71d9e5 0%, #81e3ed 0%);
 }
-.icon-download-psd {
+.button-download {
     font-size: 18px;
     text-transform: uppercase;
     color: #0d0707;
-    font-weight: bold;
-    font-family: "Roboto";
+    font-weight: bold; 
     display: flex;
     align-items: center;
 }
@@ -317,24 +307,24 @@ ul {
     left: 18px;
     padding-right: 40px;
 }
+/*footer*/
+
 .footer {
     height: 93px;
     background-color: #e8ebf1;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    margin-bottom: 5px;
 }
-.footer-iner{
+.footer-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 93px;
 }
 .footer-copyrights {
-    width: 642px;
+    max-width: 642px;
     font-size: 13px;
     line-height: 1.384;
     color: #363636;
-    font-family: "Roboto";
 }
 .logo-img-footer :hover {
     opacity: 0.7;
